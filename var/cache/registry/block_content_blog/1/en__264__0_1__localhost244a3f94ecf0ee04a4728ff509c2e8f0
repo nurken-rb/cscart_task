@@ -1,0 +1,107 @@
+a:2:{s:4:"data";a:2:{s:10:"javascript";s:2034:"<script>
+(function(_, $) {
+    $.ceEvent('on', 'ce.commoninit', function(context) {
+        var elm = context.find('#scroll_list_63');
+
+        var item = 1,
+            // default setting of carousel
+            itemsDesktop = 3,
+            itemsDesktopSmall = 3;
+            itemsTablet = 2;
+
+        if (item > 3) {
+            itemsDesktop = item;
+            itemsDesktopSmall = item - 1;
+            itemsTablet = item - 2;
+        } else if (item == 1) {
+            itemsDesktop = itemsDesktopSmall = itemsTablet = 1;
+        } else {
+            itemsDesktop = item;
+            itemsDesktopSmall = itemsTablet = item - 1;
+        }
+
+                function outsideNav () {
+            if(this.options.items >= this.itemsAmount){
+                $("#owl_outside_nav_63").hide();
+            } else {
+                $("#owl_outside_nav_63").show();
+            }
+        }
+        
+        if (elm.length) {
+            elm.owlCarousel({
+                direction: 'ltr',
+                items: item,
+                itemsDesktop: [1199, itemsDesktop],
+                itemsDesktopSmall: [979, itemsDesktopSmall],
+                itemsTablet: [768, itemsTablet],
+                itemsMobile: [479, 1],
+                                                autoPlay: false,
+                                slideSpeed: 400,
+                paginationSpeed: 800,
+                rewindSpeed: 1000,
+                stopOnHover: true,
+                                pagination: false,
+                beforeInit: function () {
+                    $.ceEvent('trigger', 'ce.scroller_init_with_quantity.beforeInit', [this]);
+                },
+                            afterInit: outsideNav,
+                afterUpdate : outsideNav
+            });
+
+              $('#owl_prev_63000').click(function(){
+                elm.trigger('owl.prev');
+              });
+              $('#owl_next_63000').click(function(){
+                elm.trigger('owl.next');
+              });
+
+            
+        }
+    });
+}(Tygh, Tygh.$));
+</script>";s:7:"content";s:1640:"        <div class="ty-mainbox-simple-container clearfix">
+                    <h2 class="ty-mainbox-simple-title">
+                                                    Blog
+                                
+            </h2>
+                <div class="ty-mainbox-simple-body">
+
+    <div class="owl-theme ty-owl-controls">
+        <div class="owl-controls clickable owl-controls-outside" id="owl_outside_nav_63">
+            <div class="owl-buttons">
+                <div id="owl_prev_63000" class="owl-prev"><span class="ty-icon ty-icon-left-open-thin" ></span></div>
+                <div id="owl_next_63000" class="owl-next"><span class="ty-icon ty-icon-right-open-thin" ></span></div>
+            </div>
+        </div>
+    </div>
+
+<div class="ty-mb-l">
+    <div class="ty-blog-recent-posts-scroller">
+        <div id="scroll_list_63" class="owl-carousel ty-scroller-list">
+
+                    <div class="ty-blog-recent-posts-scroller__item">
+
+                <div class="ty-blog-recent-posts-scroller__img-block">
+                    <a href="http://localhost/index.php?dispatch=pages.view&amp;page_id=8">
+                        <img class="ty-pict     cm-image" alt="" title="" id="det_img_8" width="894" height="305" src="http://localhost/images/blog/1/1.png" />
+
+                    </a>
+                </div>
+
+                <a href="http://localhost/index.php?dispatch=pages.view&amp;page_id=8">Check out CS-Cart Marketplace</a>
+
+                <div class="ty-blog__date">11/06/2014</div>
+
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!-- Inline script moved to the bottom of the page -->
+
+</div>
+    </div>
+";}s:6:"expiry";i:0;}

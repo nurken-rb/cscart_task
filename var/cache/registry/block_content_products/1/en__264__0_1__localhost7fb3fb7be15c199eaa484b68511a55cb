@@ -1,0 +1,598 @@
+a:2:{s:4:"data";a:2:{s:10:"javascript";s:2900:"<script>
+(function(_, $) {
+    $.ceEvent('on', 'ce.commoninit', function(context) {
+        var elm = context.find('#scroll_list_60_66eeceecd90dd');
+
+        $('.ty-float-left:contains(.ty-scroller-list),.ty-float-right:contains(.ty-scroller-list)').css('width', '100%');
+
+        var item = 4,
+            // default setting of carousel
+            itemsDesktop = 4,
+            itemsDesktopSmall = 3,
+            itemsTablet = 2,
+            itemsMobile = 1;
+
+        if (item > 3) {
+            itemsDesktop = item;
+            itemsDesktopSmall = item - 1;
+            itemsTablet = item - 2;
+        } else if (item == 1) {
+            itemsDesktop = itemsDesktopSmall = itemsTablet = 1;
+        } else {
+            itemsDesktop = item;
+            itemsDesktopSmall = itemsTablet = item - 1;
+        }
+
+        var desktop = [1199, itemsDesktop],
+            desktopSmall = [979, itemsDesktopSmall],
+            tablet = [768, itemsTablet],
+            mobile = [479, itemsMobile];
+
+                function outsideNav () {
+            if(this.options.items >= this.itemsAmount){
+                $("#owl_outside_nav_60_66eeceecd90dd").hide();
+            } else {
+                $("#owl_outside_nav_60_66eeceecd90dd").show();
+            }
+        }
+        function afterInit () {
+            outsideNav.apply(this);
+            $.ceEvent('trigger', 'ce.scroller.afterInit', [this]);
+        }
+        function afterUpdate () {
+            outsideNav.apply(this);
+            $.ceEvent('trigger', 'ce.scroller.afterUpdate', [this]);
+        }
+                function beforeInit () {
+            $.ceEvent('trigger', 'ce.scroller.beforeInit', [this]);
+        }
+        function beforeUpdate () {
+            $.ceEvent('trigger', 'ce.scroller.beforeUpdate', [this]);
+        }
+
+        if (elm.length) {
+            elm.owlCarousel({
+                direction: 'ltr',
+                items: item,
+                itemsDesktop: desktop,
+                itemsDesktopSmall: desktopSmall,
+                itemsTablet: tablet,
+                itemsMobile: mobile,
+                                scrollPerPage: true,
+                                                autoPlay: false,
+                                lazyLoad: true,
+                slideSpeed: 400,
+                paginationSpeed: 800,
+                rewindSpeed: 1000,
+                stopOnHover: true,
+                                pagination: false,
+                beforeInit: beforeInit,
+                afterInit: afterInit,
+                beforeUpdate: beforeUpdate,
+                afterUpdate: afterUpdate
+            });
+            
+              $('#owl_prev_60000').click(function(){
+                elm.trigger('owl.prev');
+              });
+              $('#owl_next_60000').click(function(){
+                elm.trigger('owl.next');
+              });
+            
+        }
+    });
+}(Tygh, Tygh.$));
+</script>";s:7:"content";s:15386:"        <div class="ty-mainbox-simple-container clearfix homepage-hotdeals">
+                    <h2 class="ty-mainbox-simple-title">
+                                                    Hot deals
+                                
+            </h2>
+                <div class="ty-mainbox-simple-body">
+                        
+
+
+        
+    <div class="owl-theme ty-owl-controls">
+        <div class="owl-controls clickable owl-controls-outside"  id="owl_outside_nav_60_66eeceecd90dd">
+            <div class="owl-buttons">
+                <div id="owl_prev_60000" class="owl-prev"><span class="ty-icon ty-icon-left-open-thin" ></span></div>
+                <div id="owl_next_60000" class="owl-next"><span class="ty-icon ty-icon-right-open-thin" ></span></div>
+            </div>
+        </div>
+    </div>
+
+<div id="scroll_list_60_66eeceecd90dd" class="owl-carousel ty-scroller-list ty-scroller"
+    data-ca-scroller-item="4"
+    data-ca-scroller-item-desktop="4"
+    data-ca-scroller-item-desktop-small="3"
+    data-ca-scroller-item-tablet="2"
+    data-ca-scroller-item-mobile="1"
+>
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=278">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/1/t-6.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/1/t-6.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000278" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000278][product_id]" value="278" />
+
+            
+                                            
+                    <div class="ty-product-labels ty-product-labels--top-right   cm-reload-60000scr_60_66eeceecd90dd000278" id="product_labels_update_60000scr_60_66eeceecd90dd000278">
+                                                                                                        
+                        <div  class="ty-product-labels__item   ty-product-labels__item--discount">
+        <div class="ty-product-labels__content">Save 60%</div>
+    </div>
+                        
+        
+            <!--product_labels_update_60000scr_60_66eeceecd90dd000278--></div>
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=278" class="product-title" title="T-shirt, Color: White" >T-shirt, Color: White</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=280">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/1/t-4.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/1/t-4.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000280" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000280][product_id]" value="280" />
+
+            
+                                            
+                    <div class="ty-product-labels ty-product-labels--top-right   cm-reload-60000scr_60_66eeceecd90dd000280" id="product_labels_update_60000scr_60_66eeceecd90dd000280">
+                                                                                                        
+                        <div  class="ty-product-labels__item   ty-product-labels__item--discount">
+        <div class="ty-product-labels__content">Save 28%</div>
+    </div>
+                        
+        
+            <!--product_labels_update_60000scr_60_66eeceecd90dd000280--></div>
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=280" class="product-title" title="T-shirt, Color: Black" >T-shirt, Color: Black</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=282">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/1/t-7.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/1/t-7.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000282" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000282][product_id]" value="282" />
+
+            
+                                            
+                    <div class="ty-product-labels ty-product-labels--top-right   cm-reload-60000scr_60_66eeceecd90dd000282" id="product_labels_update_60000scr_60_66eeceecd90dd000282">
+                                                                                                        
+                        <div  class="ty-product-labels__item   ty-product-labels__item--discount">
+        <div class="ty-product-labels__content">Save 63%</div>
+    </div>
+                        
+        
+            <!--product_labels_update_60000scr_60_66eeceecd90dd000282--></div>
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=282" class="product-title" title="T-shirt, Color: Blue" >T-shirt, Color: Blue</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=247">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/1/nokia_n1_perspectives_-_app.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/1/nokia_n1_perspectives_-_app.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000247" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000247][product_id]" value="247" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=247" class="product-title" title="Nokia N1 Pad 7.9&quot; Quad-Core 64bit 2.3GHz 2GB 32GB Android 5.0" >Nokia N1 Pad 7.9" Quad-Core 64bit 2.3GHz 2GB 32GB Android 5.0</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=248">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/1/i.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/1/i.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000248" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000248][product_id]" value="248" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=248" class="product-title" title="X-Box One" >X-Box One</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+                    <div class="ty-scroller-list__item ty-scroller__item">
+                                    <div class="ty-scroller-list__img-block">
+                                <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=241">                            <img class="ty-pict   lazyOwl  cm-image" alt="" title="" data-srcset="http://localhost/images/thumbnails/320/320/detailed/0/ipad-white-1.jpg 2x" width="160" height="160" data-src="http://localhost/images/thumbnails/160/160/detailed/0/ipad-white-1.jpg" />
+
+</a>
+                            </div>
+            <div class="ty-scroller-list__description">
+                            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="ty-simple-list clearfix">
+                <form action="http://localhost/index.php" method="post" name="product_form_60000scr_60_66eeceecd90dd000241" enctype="multipart/form-data" class="cm-disable-empty-files  cm-ajax cm-ajax-full-render cm-ajax-status-middle ">
+<input type="hidden" name="result_ids" value="cart_status*,wish_list*,checkout*,account_info*" />
+<input type="hidden" name="redirect_url" value="index.php" />
+<input type="hidden" name="product_data[scr_60_66eeceecd90dd000241][product_id]" value="241" />
+
+            
+                                            
+            
+
+            <bdi>            <a href="http://localhost/index.php?dispatch=products.view&amp;product_id=241" class="product-title" title="Apple® - iPad® with Retina® display Wi-Fi - 32GB - White" >Apple® - iPad® with Retina® display Wi-Fi - 32GB - White</a>    
+</bdi>
+                
+                    
+
+
+            
+
+                                    
+
+
+            
+                            
+            
+            
+                            
+                        
+                                        
+
+
+                            
+
+                                                                    <input type="hidden" name="security_hash" class="cm-no-hide-input" value="fc46e6dbc88320e7d04e7055687e642e" /></form>
+
+        
+    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+<!-- Inline script moved to the bottom of the page -->
+
+</div>
+    </div>
+";}s:6:"expiry";i:0;}
